@@ -1,6 +1,5 @@
 import React from "react";
-import ContactForm from "../Contact/Form";
-import Image from "next/image";
+import ContactForm from "../Contact/ContactForm";
 
 const HeroSection = () => {
   return (
@@ -21,10 +20,7 @@ const HeroSection = () => {
             </p>
             <div className="flex justify-center">
               <button className="inline-flex text-black bg-yellow-400 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-350 rounded text-lg">
-                Button
-              </button>
-              <button className="ml-4 inline-flex text-gray-400 bg-black/20 border-0 py-2 px-6 focus:outline-none hover:bg-black/50 hover:text-white rounded text-lg">
-                Button
+                Give us a call
               </button>
             </div>
           </div>
