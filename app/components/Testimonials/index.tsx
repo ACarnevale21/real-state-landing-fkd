@@ -4,7 +4,7 @@ const Testimonials: React.FC = () => {
   return (
     <section className="text-black/90 bg-white/90 body-font">
       <div className="container px-5 py-24 mx-auto">
-        <h1 className="text-3xl font-medium title-font text-black/90 mb-12 text-center">
+        <h1 className="text-3xl font-bold title-font text-black/90 mb-12 text-center">
           Testimonials
         </h1>
         <div className="flex flex-wrap -m-4">

@@ -1,11 +1,14 @@
+"use client"
 import Image from "next/image";
 import React from "react";
+import { useScrollPosition } from "@/app/hooks/useScrollPosition";
 
 const Navbar = () => {
+  const scrollPosition = useScrollPosition();
   return (
-    <header className="text-gray-400 bg-black body-font">
+    <header className={`sticky top-0 z-50 transition-shadow text-gray-400 bg-black body-font ${scrollPosition > 0 ? "shadow bg-opacity-70 backdrop-blur-lg backdrop-filter" : "shadow-none"}`}>
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <a className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+        <a className="flex title-font font-medium items-center cursor-pointer text-white mb-4 md:mb-0">
           {/* <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -22,10 +25,10 @@ const Navbar = () => {
           <span className="ml-3 text-xl">Bright Future</span>
         </a>
         <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700 flex flex-wrap items-center text-base justify-center">
-          <a className="mr-5 hover:text-white">Home</a>
-          <a className="mr-5 hover:text-white">About Us</a>
-          <a className="mr-5 hover:text-white">Testimonials</a>
-          <a className="mr-5 hover:text-white">Contact Us</a>
+          <a className="mr-5 hover:text-white cursor-pointer">Home</a>
+          <a className="mr-5 hover:text-white cursor-pointer">About Us</a>
+          <a className="mr-5 hover:text-white cursor-pointer">Testimonials</a>
+          <a className="mr-5 hover:text-white cursor-pointer">Contact Us</a>
         </nav>
         {/* <button className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
           Button
