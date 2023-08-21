@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section className="text-gray-400 bg-gray-900 body-font hero-section-bg-img">
-      <div className="block left-0 right-0 top-0 bottom-0 mx-auto bg-black/70 z-[2]">
+    <section className="text-gray-400 bg-black/90 body-font hero-section-bg-img">
+      <div className="block left-0 right-0 top-0 bottom-0 mx-auto bg-black/90 z-[2]">
         <div className="container w-25 px-5 py-24 mx-auto flex flex-col items-center md:flex-row">
           <div className="md:w-1/2 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
@@ -20,10 +20,10 @@ const HeroSection = () => {
               truffaut hexagon try-hard chambray.
             </p>
             <div className="flex justify-center">
-              <button className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
+              <button className="inline-flex text-black bg-yellow-400 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-350 rounded text-lg">
                 Button
               </button>
-              <button className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+              <button className="ml-4 inline-flex text-gray-400 bg-black/20 border-0 py-2 px-6 focus:outline-none hover:bg-black/50 hover:text-white rounded text-lg">
                 Button
               </button>
             </div>

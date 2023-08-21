@@ -12,7 +12,7 @@ const Testimonial: React.FC<TestimonialProps> = ({
   content,
 }) => (
   <div className="p-4 md:w-1/2 w-full">
-    <div className="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
+    <div className="h-full bg-black bg-opacity-40 p-8 rounded">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="currentColor"
@@ -39,7 +39,7 @@ const Testimonial: React.FC<TestimonialProps> = ({
 
 const TestimonialsSection: React.FC = () => {
   return (
-    <section className="text-gray-400 bg-gray-900 body-font">
+    <section className="text-gray-400 bg-black/90 body-font">
       <div className="container px-5 py-24 mx-auto">
         <h1 className="text-3xl font-medium title-font text-white mb-12 text-center">
           Testimonials
