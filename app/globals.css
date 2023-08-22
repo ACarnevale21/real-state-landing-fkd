@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 5rem;
+}
 .hero-section-bg-img {
   background-image: url("./assets/casa-bg-hero.jpg");
   background-repeat: no-repeat;
