@@ -111,7 +111,7 @@ const ContactForm = () => {
                   htmlFor="message"
                   className="leading-7 text-sm text-gray-800 font-semibold"
                 >
-                  What's your situation?
+                  What&apos;s your situation?
                 </label>
                 <textarea
                   id="message"
