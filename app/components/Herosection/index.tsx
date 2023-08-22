@@ -22,7 +22,7 @@ const HeroSection = () => {
               cash
             </p>
             <div className="flex justify-center">
-              <button className="inline-flex transition ease-in-out delay-150 text-black font-bold bg-yellow-400 border-0 py-2 px-6 focus:outline-none hover:-translate-y-1 hover:scale-110 hover:bg-yellow-350 duration-300 rounded text-lg">
+              <button className="inline-flex transition ease-in-out delay-0 text-black  bg-yellow-400 border-0 py-2 px-6 focus:outline-none hover:-translate-y-1 hover:scale-110 hover:bg-yellow-350 duration-300 rounded text-lg">
                 Give us a call
               </button>
             </div>
