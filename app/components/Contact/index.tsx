@@ -2,7 +2,10 @@ import React from "react";
 
 const ContactSection = () => {
   return (
-    <section className="text-gray-900 bg-white body-font shadow-md relative" id="contactForm">
+    <section
+      className="text-gray-900 bg-white body-font shadow-md relative"
+      id="contactForm"
+    >
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-12">
           <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-black/90">
@@ -64,7 +67,7 @@ const ContactSection = () => {
             </div>
             <div className="p-2 w-full">
               <button className="flex mx-auto text-white bg-yellow-400 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-500 rounded text-lg">
-                Button
+                Send
               </button>
             </div>
             <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
