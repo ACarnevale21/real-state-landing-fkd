@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const ContactForm = () => {
   return (
-    <div className="w-3/4 mx-auto p-2 bg-white rounded-lg shadow-gray-900 shadow-md">
+    <div className="lg:w-3/4 md:w-full sm:w-full mx-auto p-2 bg-white rounded-lg shadow-gray-900 shadow-md ">
       <div className="h-24 w-24 rounded-full z-15 bg-black mx-auto shadow drop-shadow-2xl shadow-black">
         <div className="relative h-auto p-0 z-15 -mt-14 flex justify-center flex-wrap items-center">
           <Image
@@ -21,9 +21,9 @@ const ContactForm = () => {
             Contact Us
           </h1>
         </div>
-        <div className="lg:w-full md:w-2/3">
+        <div className="lg:w-full md:flex-col w-full justify-center items-center">
           <div className="flex flex-wrap -m-2">
-            <div className=" flex p-2 w-full">
+            <div className="lg:flex flex-row p-2 w-full md:flex-row">
               <div className="relative">
                 <label
                   htmlFor="name"
@@ -40,7 +40,7 @@ const ContactForm = () => {
                   className="w-full bg-gray-200 rounded border border-gray-300 focus:ring-2 focus:ring-yellow-600 text-base outline-none text-gray-900 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
-              <div className="relative pl-2">
+              <div className="lg:pl-2 relative  md:pl-0 sm:pl-0">
                 <label
                   htmlFor="name"
                   className="leading-7 text-sm text-gray-800 font-semibold"
