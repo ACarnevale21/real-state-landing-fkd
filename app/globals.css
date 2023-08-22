@@ -4,5 +4,8 @@
 
 .hero-section-bg-img {
   background-image: url("./assets/casa-bg-hero.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: top;
+  background-origin: content-box;
 }

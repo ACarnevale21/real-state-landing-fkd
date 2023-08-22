@@ -3,11 +3,14 @@ import ContactForm from "../Contact/ContactForm";
 
 const HeroSection = () => {
   return (
-    <section className="text-gray-400 bg-black/90 body-font hero-section-bg-img" id="home">
-      <div className="block left-0 right-0 top-0 bottom-0 mx-auto bg-black/90 z-[2]">
+    <section
+      className="text-gray-400 bg-black/90 body-font hero-section-bg-img"
+      id="home"
+    >
+      <div className="block left-0 right-0 top-0 bottom-0 mx-auto bg-black/50 z-[2]">
         <div className="container w-3/4 px-5 py-24 mx-auto flex flex-col items-center md:flex-row">
           <div className="md:w-1/2 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-bold text-white">
               Before they sold out
               <br className="hidden lg:inline-block" />
               readymade gluten
