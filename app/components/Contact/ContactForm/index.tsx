@@ -65,7 +65,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="lg:w-3/4 md:w-full sm:w-full mx-auto p-2 bg-white rounded-lg shadow-gray-900 shadow-md ">
+    <div className="lg:w-3/4 md:w-full sm:w-full mx-auto pt-2 pb-6 bg-white rounded-lg shadow-gray-900 shadow-md ">
       <div className="h-24 w-24 rounded-full z-15 bg-black mx-auto shadow drop-shadow-2xl shadow-black">
         <div className="relative h-auto p-0 z-15 -mt-14 flex justify-center flex-wrap items-center">
           <Image
@@ -84,7 +84,7 @@ const ContactForm = () => {
           </h1>
         </div>
 
-        <div className="lg:w-full md:flex-col w-full justify-center items-center">
+        <div className="flex justify-center content-center items-center md:flex-col">
           <Container className="flex flex-wrap -m-2">
             <div className="lg:flex flex-row p-2 w-full md:flex-row">
               <FormControl
@@ -248,7 +248,7 @@ const ContactForm = () => {
                 }
                 onClick={onSubmit}
                 isLoading={isLoading}
-                className="flex mx-auto transition ease-in-out delay-0 text-gray-900  bg-yellow-400 border-0 py-2 px-8 focus:outline-none hover:-translate-y-1 hover:scale-110 hover: duration-300 rounded text-lg"
+                className="flex mx-auto transition ease-in-out delay-0 text-gray-900  bg-yellow-400 border-0 py-2 px-8 focus:outline-none hover:-translate-y-1 hover:scale-110 hover:duration-300 rounded text-lg"
               >
                 Send
               </Button>
