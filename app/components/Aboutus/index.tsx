@@ -39,7 +39,7 @@ function AboutUs() {
             </p>
           </div>
         </div>
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <div className="lg:max-w-lg lg:w-full md:w-1/2">
           <Image
             src={aboutPick}
             width={500}
