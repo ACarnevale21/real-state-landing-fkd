@@ -2,7 +2,10 @@ import TestimonialCard from "./TestimonialCard";
 
 const Testimonials: React.FC = () => {
   return (
-    <section className="text-black/90 bg-white body-font" id="testimonials">
+    <section
+      className="text-black/90 bg-white body-font pb-6"
+      id="testimonials"
+    >
       <div className="w-3/4 px-5 pt-24 mx-auto">
         <h1 className="text-3xl font-bold title-font text-black/90 mb-12 text-center">
           Testimonials
