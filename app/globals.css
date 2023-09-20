@@ -13,3 +13,10 @@ html {
   background-position: top;
   background-origin: content-box;
 }
+.contact-section-bg-img {
+  background-image: url("./assets/casa-bg-contact.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-origin: content-box;
+}

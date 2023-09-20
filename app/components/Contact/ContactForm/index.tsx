@@ -90,7 +90,7 @@ const ContactForm = () => {
 
         <div className="flex justify-center content-center items-center md:flex-col">
           <div className="flex flex-wrap -m-2">
-            <form className="relative" ref={form} onSubmit={sendEmail}>
+            <form className="relative p-2" ref={form} onSubmit={sendEmail}>
               <div className="flex-row p-2 w-full md:flex-row lg:flex">
                 <div className="md:mr-2">
                   <label
