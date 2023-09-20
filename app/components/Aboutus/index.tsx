@@ -5,8 +5,8 @@ import aboutPick from "../../assets/about-us-img.jpeg";
 function AboutUs() {
   return (
     <section className="text-gray-600 body-font bg-white" id="aboutus">
-      <div className="w-3/4 md:h-[46rem] mx-auto flex px-5 pt-24 pb-8 md:flex-row flex-col items-center">
-        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <div className="w-3/4 xl:h-[46rem] md:w-full xl:w-3/4 mx-auto flex px-5 pt-24 pb-8 xl:flex-row flex-col items-center">
+        <div className="xl:flex-grow md:w-1/2 lg:pr-24 md:pr-8 flex flex-col xl:items-start xl:text-left mb-16 md:mb-0 items-center text-center">
           <div>
             <h1 className="title-font sm:text-4xl text-4xl mb-4 font-bold text-gray-900">
               About Us
