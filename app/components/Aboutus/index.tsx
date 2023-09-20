@@ -4,8 +4,8 @@ import aboutPick from "../../assets/about-us-img.jpeg";
 
 function AboutUs() {
   return (
-    <section className="text-gray-600 body-font bg-white">
-      <div className="w-3/4 mx-auto flex px-5 pt-24 pb-8 md:flex-row flex-col items-center">
+    <section className="text-gray-600 body-font bg-white" id="aboutus">
+      <div className="w-3/4 md:h-[46rem] mx-auto flex px-5 pt-24 pb-8 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <div>
             <h1 className="title-font sm:text-4xl text-4xl mb-4 font-bold text-gray-900">
@@ -49,7 +49,7 @@ function AboutUs() {
           />
         </div>
       </div>
-      <div className="flex justify-center mx-auto">
+      <div className="flex justify-center mx-auto py-10 ">
         <button className="flex mx-auto transition ease-in-out delay-0 text-gray-900  bg-yellow-400 border-0 py-2 px-8 focus:outline-none hover:-translate-y-1 hover:scale-110 hover: duration-300 rounded text-lg">
           Give us a call
         </button>

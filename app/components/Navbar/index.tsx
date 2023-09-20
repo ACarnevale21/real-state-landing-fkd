@@ -34,7 +34,9 @@ const Navbar = () => {
           <a className="mr-5 hover:text-white cursor-pointer" href="#home">
             Home
           </a>
-          <a className="mr-5 hover:text-white cursor-pointer">About Us</a>
+          <a className="mr-5 hover:text-white cursor-pointer" href="#aboutus">
+            About Us
+          </a>
           <a
             className="mr-5 hover:text-white cursor-pointer"
             href="#testimonials"

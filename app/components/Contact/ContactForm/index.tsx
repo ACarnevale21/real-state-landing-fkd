@@ -55,16 +55,29 @@ const ContactForm = () => {
     e.preventDefault();
 
     if (form.current) {
-      emailjs
-        .sendForm("SERVICE_ID", "TEMPLATE_ID", form.current, "PUBLIC_KEY")
-        .then(
-          (result) => {
-            console.log(result.text);
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
+      if (
+        process.env.NEXT_PUBLIC_SERVICE_ID &&
+        process.env.NEXT_PUBLIC_TEMPLATE_ID &&
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID
+      ) {
+        emailjs
+          .sendForm(
+            process.env.NEXT_PUBLIC_SERVICE_ID,
+            process.env.NEXT_PUBLIC_TEMPLATE_ID,
+            form.current,
+            process.env.NEXT_PUBLIC_EMAILJS_USER_ID
+          )
+          .then(
+            (result) => {
+              console.log(result.text);
+            },
+            (error) => {
+              console.log(error.text);
+            }
+          );
+      } else {
+        console.error("Error with env variables");
+      }
     }
   };
 

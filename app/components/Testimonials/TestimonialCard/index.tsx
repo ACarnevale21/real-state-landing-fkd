@@ -14,7 +14,7 @@ const TestimonialCard: React.FC<TestimonialProps> = ({
   content,
 }) => (
   <div className="p-4 md:w-1/2 w-full">
-    <div className="h-full bg-black bg-opacity-30 p-8 rounded-xl">
+    <div className="h-full bg-white p-8 rounded-xl">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="currentColor"
