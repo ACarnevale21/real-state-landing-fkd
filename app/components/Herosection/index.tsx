@@ -8,8 +8,8 @@ const HeroSection = () => {
       id="home"
     >
       <div className="block left-0 right-0 top-0 bottom-0 mx-auto bg-black/50 z-[2]">
-        <div className="container lg:w-3/4 px-5 py-24 mx-auto flex flex-col items-center md:w-full md:flex-row sm:w-full ">
-          <div className="md:w-1/2 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <div className="container px-5 py-24 mx-auto flex flex-col items-center lg:w-3/4 md:w-full lg:flex-row w-full ">
+          <div className="flex flex-col items-center text-center lg:w-1/2 lg:pr-16 md:items-start lg:text-left mb-16 lg:mb-0 ">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-extrabold text-white">
               Free your home, free your mind:
               <br className="hidden lg:inline-block" />
@@ -21,13 +21,13 @@ const HeroSection = () => {
               situations. Gain peace of mind by selling your house instantly for
               cash
             </p>
-            <div className="flex justify-center">
+            <div className="flex justify-center items-center mx-auto">
               <button className="inline-flex transition ease-in-out delay-0 text-black  bg-yellow-400 border-0 py-2 px-6 focus:outline-none hover:-translate-y-1 hover:scale-110 hover:bg-yellow-350 duration-300 rounded text-lg">
                 Give us a call
               </button>
             </div>
           </div>
-          <div className="lg:w-1/2 md:w-full sm:w-full">
+          <div className="lg:w-1/2 md:w-3/4 sm:w-full">
             <ContactForm />
           </div>
         </div>
