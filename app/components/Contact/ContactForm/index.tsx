@@ -8,6 +8,7 @@ import {
   ContactFormValues,
   InitialTouchedValuesInterface,
 } from "./ContactInterfaces";
+import Toast from "./components/Toast";
 
 const initValues: ContactFormValues = {
   user_name: "",
@@ -29,6 +30,7 @@ const initTouched: InitialTouchedValuesInterface = {
 const ContactForm = () => {
   const [state, setState] = useState(initState);
   const [isLoading, setIsLoading] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
   const [touched, setTouched] = useState(initTouched);
   const form = useRef<HTMLFormElement | null>(null);
 
@@ -70,7 +72,12 @@ const ContactForm = () => {
           )
           .then((result) => {
             setIsLoading(false);
+            setIsSuccess(true);
             console.log(result);
+
+            /*setTimeout(() => {
+              setIsSuccess(false);
+            }, 2000);*/
           })
           .catch((error) => {
             setIsLoading(false);
@@ -224,6 +231,7 @@ const ContactForm = () => {
                 </button>
               </div>
             </form>
+            {isSuccess ? <Toast isSuccess={isSuccess} /> : null}
           </div>
         </div>
       </div>
