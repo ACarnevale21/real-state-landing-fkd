@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import aboutPick from "../../assets/about-us-img.jpeg";
+import aboutPick from "../../assets/about-us.png";
 
 function AboutUs() {
   return (
