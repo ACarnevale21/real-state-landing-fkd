@@ -1,5 +1,6 @@
 import React from "react";
-import { IoMdMail, IoMdCall, IoMdCash } from "react-icons/io";
+import { IoCashOutline } from "react-icons/io5";
+import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 
 function HowItWorks() {
   return (
@@ -19,38 +20,38 @@ function HowItWorks() {
           <p className="text-md font-semibold">All You Have To Do Is…</p>
         </div>
         <div>
-          <div className="flex justify-center flex-col items-center text-center bg-yellow-400 p-5 m-4 rounded-lg md:flex-row md:items-center">
+          <div className="flex justify-center flex-col items-center text-center bg-gray-100 p-5 m-4 rounded-lg shadow-md md:flex-row md:items-center">
             <div className="rounded-full p-2 border-gray-900 border-4 mx-auto ">
-              <IoMdMail className="h-14 w-14 text-gray-900 p-1" />
+              <AiOutlineMail className="h-14 w-14 text-gray-900 p-1" />
             </div>
             <div>
-              <h1 className="text-3xl font-extrabold">1. Send Info</h1>
-              <p className="text-lg font-semibold pt-3 text-gray-900 md:p-4">
+              <h1 className="text-3xl font-bold pt-1">1. Send Info</h1>
+              <p className="text-lg font-medium pt-3 text-gray-900 md:p-4">
                 Just fill out our simple form giving us some basic details about
                 the house you want to sell.
               </p>
             </div>
           </div>
 
-          <div className="flex justify-center flex-col items-center text-center bg-yellow-400 p-5 m-4 rounded-lg md:flex-row md:items-center">
+          <div className="flex justify-center flex-col items-center text-center bg-gray-100 p-5 m-4 rounded-lg shadow-md md:flex-row md:items-center">
             <div className="rounded-full p-2 border-gray-900 border-4 mx-auto ">
-              <IoMdCall className="h-14 w-14 text-gray-900 p-1" />
+              <AiOutlinePhone className="h-14 w-14 text-gray-900 p-1" />
             </div>
             <div>
-              <h1 className="text-3xl font-extrabold">2. Receive Offer </h1>
-              <p className="text-lg font-semibold pt-3 text-gray-900 md:p-4">
+              <h1 className="text-3xl font-bold pt-1">2. Receive Offer </h1>
+              <p className="text-lg font-medium pt-3 text-gray-900 md:p-4">
                 We'll make an appointment to view your house. After that, you'll
                 quickly receive a no-obligation offer.
               </p>
             </div>
           </div>
-          <div className="flex justify-center flex-col items-center text-center bg-yellow-400 p-5 mx-4 mt-4  rounded-lg md:flex-row md:items-center">
+          <div className="flex justify-center flex-col items-center text-center bg-gray-100 p-5 mx-4 mt-4 shadow-md rounded-lg md:flex-row md:items-center">
             <div className="rounded-full p-2 border-gray-900 border-4 mx-auto ">
-              <IoMdCash className="h-14 w-14 text-gray-900 p-1" />
+              <IoCashOutline className="h-14 w-14 text-gray-900 p-1" />
             </div>
             <div>
-              <h1 className="text-3xl font-extrabold">3. Get Cash </h1>
-              <p className="text-lg font-semibold pt-3 text-gray-900 md:p-4">
+              <h1 className="text-3xl font-bold pt-1">3. Get Cash </h1>
+              <p className="text-lg font-medium pt-3 text-gray-900 md:p-4">
                 If you like our terms, simply set a closing date and receive
                 your money.
               </p>
