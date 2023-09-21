@@ -1,15 +1,13 @@
 export interface ContactFormValues {
-  name: string;
-  lastName: string;
-  email: string;
+  user_name: string;
+  user_email: string;
   phone: string;
   address: string;
   message: string;
 }
 export interface InitialTouchedValuesInterface {
-  name: boolean;
-  lastName: boolean;
-  email: boolean;
+  user_name: boolean;
+  user_email: boolean;
   phone: boolean;
   address: boolean;
   message: boolean;

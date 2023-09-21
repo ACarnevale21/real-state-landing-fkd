@@ -40,8 +40,8 @@ function HowItWorks() {
             <div>
               <h1 className="text-3xl font-bold pt-1">2. Receive Offer </h1>
               <p className="text-lg font-medium pt-3 text-gray-900 md:p-4">
-                We'll make an appointment to view your house. After that, you'll
-                quickly receive a no-obligation offer.
+                We&apos;ll make an appointment to view your house. After that,
+                you&apos;ll quickly receive a no-obligation offer.
               </p>
             </div>
           </div>

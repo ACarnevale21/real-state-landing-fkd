@@ -9,9 +9,8 @@ import {
 } from "./ContactInterfaces";
 
 const initValues: ContactFormValues = {
-  name: "",
-  lastName: "",
-  email: "",
+  user_name: "",
+  user_email: "",
   phone: "",
   address: "",
   message: "",
@@ -20,9 +19,8 @@ const initValues: ContactFormValues = {
 const initState = { values: initValues, isLoading: false };
 
 const initTouched: InitialTouchedValuesInterface = {
-  name: false,
-  lastName: false,
-  email: false,
+  user_name: false,
+  user_email: false,
   phone: false,
   address: false,
   message: false,
@@ -104,26 +102,26 @@ const ContactForm = () => {
         <div className="flex justify-center content-center items-center md:flex-col">
           <div className="flex flex-wrap -m-2">
             <form className="relative p-2" ref={form} onSubmit={sendEmail}>
-              <div className="flex-row p-2 w-full md:flex-row lg:flex">
-                <div className="md:mr-2">
+              <div className="p-2 w-full">
+                <div>
                   <label
                     htmlFor="name"
                     className="leading-7 text-sm text-gray-800 font-semibold"
                   >
-                    Name
+                    Full Name
                   </label>
                   <input
                     type="text"
-                    id="name"
-                    value={values.name}
+                    id="user_name"
+                    value={values.user_name}
                     onChange={handleChange}
                     onBlur={onBlur}
-                    name="name"
-                    placeholder="Full name"
+                    name="user_name"
+                    placeholder="John Doe"
                     className="w-full bg-gray-200 rounded border border-gray-300 focus:ring-2 focus:ring-yellow-600 text-base outline-none text-gray-900 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
-                <div>
+                {/* <div>
                   <label
                     htmlFor="lastName"
                     className="leading-7 text-sm text-gray-800 font-semibold"
@@ -140,7 +138,7 @@ const ContactForm = () => {
                     placeholder="Last name"
                     className="w-full bg-gray-200 rounded border border-gray-300 focus:ring-2 focus:ring-yellow-600 text-base outline-none text-gray-900 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
-                </div>
+                </div> */}
               </div>
               <div className="p-2 w-full">
                 <label
@@ -152,8 +150,8 @@ const ContactForm = () => {
                 <input
                   type="email"
                   id="email"
-                  name="email"
-                  value={values.email}
+                  name="user_email"
+                  value={values.user_email}
                   onBlur={onBlur}
                   onChange={handleChange}
                   placeholder="email@address.com"
