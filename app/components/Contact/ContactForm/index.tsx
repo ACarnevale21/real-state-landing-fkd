@@ -238,7 +238,7 @@ const ContactForm = () => {
                 </button>
               </div>
             </form>
-            <Toaster position="top-right" reverseOrder={true} />
+            <Toaster position="bottom-right" reverseOrder={true} />
           </div>
         </div>
       </div>
