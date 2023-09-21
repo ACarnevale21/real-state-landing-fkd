@@ -1,5 +1,6 @@
 import React from "react";
 import ContactForm from "./ContactForm";
+import { IoMdArrowRoundForward } from "react-icons/io";
 
 const ContactSection = () => {
   return (
@@ -12,9 +13,12 @@ const ContactSection = () => {
           <div className="">
             <ul>
               <li className="my-2 md:mt-11">
-                <h3 className="text-white text-xl font-bold md:text-2xl">
-                  &gt; &gt; Do not pay unnecessary fees.
-                </h3>
+                <div className="flex flex-row items-center">
+                  <IoMdArrowRoundForward className="text-white h-6 w-6 mr-2" />
+                  <h3 className="text-white text-xl font-bold md:text-2xl">
+                    Do not pay unnecessary fees.
+                  </h3>
+                </div>
                 <p className="text-white text-sm md:text-lg">
                   Bright Future has helped hundreds of homeowners do just that.
                   Many agents insist on charging you a percentage of the sale
@@ -23,9 +27,12 @@ const ContactSection = () => {
                 </p>
               </li>
               <li className="my-2 md:mt-11">
-                <h3 className="text-white text-xl font-bold md:text-2xl">
-                  &gt; &gt; No need to pay for repairs or remodeling .
-                </h3>
+                <div className="flex flex-row items-center">
+                  <IoMdArrowRoundForward className="text-white h-6 w-6 mr-2" />
+                  <h3 className="text-white text-xl font-bold md:text-2xl">
+                    No need to pay for repairs or remodeling .
+                  </h3>
+                </div>
                 <p className="text-white text-sm md:text-lg">
                   When you choose to work with Bright Future, there’s no need to
                   remodel or repair your house. We’ll handle repairs, disposals,

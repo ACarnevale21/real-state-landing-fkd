@@ -6,7 +6,7 @@ const Testimonials: React.FC = () => {
       className="text-black/90 bg-gray-100 body-font pb-16 lg:h-[48rem]"
       id="testimonials"
     >
-      <div className="w-3/4 px-5 pt-24 mx-auto">
+      <div className="w-full md:w-3/4 px-5 pt-24 mx-auto">
         <h1 className="text-3xl font-bold title-font text-black/70 mb-12 text-center">
           Testimonials
         </h1>

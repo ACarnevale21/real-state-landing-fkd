@@ -5,6 +5,7 @@ import AboutUs from "./components/Aboutus";
 import ContactSection from "./components/Contact";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
+import HowItWorks from "./components/HowItWorks";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <AboutUs />
+      <HowItWorks />
       <Testimonials />
       <ContactSection />
       <Footer />
