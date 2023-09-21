@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useRef } from "react";
 import Image from "next/image";
+import Loader from "./components/Loader";
 
 import emailjs from "@emailjs/browser";
 import {
@@ -16,7 +17,7 @@ const initValues: ContactFormValues = {
   message: "",
 };
 
-const initState = { values: initValues, isLoading: false };
+const initState = { values: initValues };
 
 const initTouched: InitialTouchedValuesInterface = {
   user_name: false,
@@ -27,10 +28,11 @@ const initTouched: InitialTouchedValuesInterface = {
 };
 const ContactForm = () => {
   const [state, setState] = useState(initState);
+  const [isLoading, setIsLoading] = useState(false);
   const [touched, setTouched] = useState(initTouched);
   const form = useRef<HTMLFormElement | null>(null);
 
-  const { values, isLoading } = state;
+  const { values } = state;
 
   const onBlur = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -58,6 +60,7 @@ const ContactForm = () => {
         process.env.NEXT_PUBLIC_TEMPLATE_ID &&
         process.env.NEXT_PUBLIC_EMAILJS_USER_ID
       ) {
+        setIsLoading(true);
         emailjs
           .sendForm(
             process.env.NEXT_PUBLIC_SERVICE_ID,
@@ -65,14 +68,14 @@ const ContactForm = () => {
             form.current,
             process.env.NEXT_PUBLIC_EMAILJS_USER_ID
           )
-          .then(
-            (result) => {
-              console.log(result.text);
-            },
-            (error) => {
-              console.log(error.text);
-            }
-          );
+          .then((result) => {
+            setIsLoading(false);
+            console.log(result);
+          })
+          .catch((error) => {
+            setIsLoading(false);
+            console.log(error.text);
+          });
       } else {
         console.error("Error with env variables");
       }
@@ -217,7 +220,7 @@ const ContactForm = () => {
                   type="submit"
                   className="flex mx-auto transition ease-in-out delay-0 text-gray-900  bg-yellow-400 border-0 py-2 px-8 focus:outline-none hover:-translate-y-1 hover:scale-110 hover:duration-300 rounded text-lg"
                 >
-                  Send
+                  {isLoading ? <Loader /> : "Submit"}
                 </button>
               </div>
             </form>
