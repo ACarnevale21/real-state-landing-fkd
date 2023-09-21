@@ -93,7 +93,10 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="lg:w-3/4 md:w-full sm:w-full mx-auto pt-2 pb-6 bg-white rounded-lg shadow-gray-900 shadow-md ">
+    <div
+      className="lg:w-3/4 md:w-full sm:w-full mx-auto pt-2 pb-6 bg-white rounded-lg shadow-gray-900 shadow-md "
+      id="contactForm"
+    >
       <div className="h-24 w-24 rounded-full z-15 bg-black mx-auto shadow drop-shadow-2xl shadow-black">
         <div className="relative h-auto p-0 z-15 -mt-14 flex justify-center flex-wrap items-center">
           <Image
