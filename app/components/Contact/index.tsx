@@ -44,7 +44,7 @@ const ContactSection = () => {
           </div>
         </div>
 
-        <div className="w-full p-8 mb-8 my-20" id="contactForm">
+        <div className="w-full p-8 mb-8 my-20 xl:w-4/5 " id="contactForm">
           <ContactForm />
         </div>
       </div>
