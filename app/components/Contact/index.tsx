@@ -4,7 +4,7 @@ import { IoMdArrowRoundForward } from "react-icons/io";
 
 const ContactSection = () => {
   return (
-    <section className=" bg-black/30 contact-section-bg-img" id="home">
+    <section className=" bg-black/30 contact-section-bg-img">
       <div className="grid grid-cols-1 bg-black/70 z-[2] md:grid-cols-2 md:mx-auto">
         <div className="mx-6 mb-12 mt-12 md:flex  md:flex-col md:p-8 md:justify-center md:items-center ">
           <div className="text-white text-3xl font-bold md:text-5xl md:text-center">
@@ -44,7 +44,7 @@ const ContactSection = () => {
           </div>
         </div>
 
-        <div className="w-full p-8 mb-8 my-20">
+        <div className="w-full p-8 mb-8 my-20 xl:w-4/5 " id="contactForm">
           <ContactForm />
         </div>
       </div>

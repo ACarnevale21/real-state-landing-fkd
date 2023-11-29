@@ -2,7 +2,7 @@
 import React, { useState, useRef } from "react";
 import Image from "next/image";
 import Loader from "./components/Loader";
-
+import toast, { Toaster } from "react-hot-toast";
 import emailjs from "@emailjs/browser";
 import {
   ContactFormValues,
@@ -19,33 +19,32 @@ const initValues: ContactFormValues = {
 
 const initState = { values: initValues };
 
-const initTouched: InitialTouchedValuesInterface = {
-  user_name: false,
-  user_email: false,
-  phone: false,
-  address: false,
-  message: false,
-};
 const ContactForm = () => {
-  const [state, setState] = useState(initState);
+  const [formValues, setFormValues] = useState(initState);
   const [isLoading, setIsLoading] = useState(false);
-  const [touched, setTouched] = useState(initTouched);
+  const [isSuccess, setIsSuccess] = useState(false);
   const form = useRef<HTMLFormElement | null>(null);
 
-  const { values } = state;
+  const { values } = formValues;
+
+  const isSubmitDisabled =
+    !values.user_name ||
+    !values.user_email ||
+    !values.phone ||
+    !values.address ||
+    !values.message;
 
   const onBlur = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { target } = event;
-    setTouched((prev) => ({ ...prev, [target.name]: true }));
   };
 
   const handleChange = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { target } = event;
-    setState((prev) => ({
+    setFormValues((prev) => ({
       ...prev,
       values: { ...prev.values, [target.name]: target.value },
     }));
@@ -53,6 +52,10 @@ const ContactForm = () => {
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (isSubmitDisabled) {
+      toast.error("Please fill out all fields");
+      return;
+    }
 
     if (form.current) {
       if (
@@ -70,10 +73,17 @@ const ContactForm = () => {
           )
           .then((result) => {
             setIsLoading(false);
-            console.log(result);
+            setIsSuccess(true);
+            toast.success("Email sent successfully!");
+            setFormValues(initState);
+
+            /*setTimeout(() => {
+              setIsSuccess(false);
+            }, 2000);*/
           })
           .catch((error) => {
             setIsLoading(false);
+            toast.error("Email failed to send");
             console.log(error.text);
           });
       } else {
@@ -218,12 +228,17 @@ const ContactForm = () => {
               <div className="p-2 w-full">
                 <button
                   type="submit"
+                  disabled={isSubmitDisabled && isLoading}
                   className="flex mx-auto transition ease-in-out delay-0 text-gray-900  bg-yellow-400 border-0 py-2 px-8 focus:outline-none hover:-translate-y-1 hover:scale-110 hover:duration-300 rounded text-lg"
+                  style={{
+                    cursor: isSubmitDisabled ? "not-allowed" : "pointer",
+                  }}
                 >
                   {isLoading ? <Loader /> : "Submit"}
                 </button>
               </div>
             </form>
+            <Toaster position="bottom-right" reverseOrder={true} />
           </div>
         </div>
       </div>

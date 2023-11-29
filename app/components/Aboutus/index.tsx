@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import aboutPick from "../../assets/about-us-img.jpeg";
+import aboutPick from "../../assets/about-us.png";
 
 function AboutUs() {
   return (
@@ -42,8 +42,8 @@ function AboutUs() {
         <div className="lg:max-w-lg lg:w-full md:w-1/2">
           <Image
             src={aboutPick}
-            width={500}
-            height={500}
+            width={1000}
+            height={1000}
             alt="Picture of the author"
             className="object-cover object-center rounded"
           />
