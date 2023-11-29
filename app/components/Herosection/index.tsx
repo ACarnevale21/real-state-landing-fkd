@@ -22,9 +22,11 @@ const HeroSection = () => {
               cash
             </p>
             <div className="flex justify-center items-center mx-auto">
-              <button className="inline-flex transition ease-in-out delay-0 text-black  bg-yellow-400 border-0 py-2 px-6 focus:outline-none hover:-translate-y-1 hover:scale-110 hover:bg-yellow-350 duration-300 rounded text-lg">
-                Give us a call
-              </button>
+              <a href="tel:+19546677091">
+                <button className="inline-flex transition ease-in-out delay-0 text-black  bg-yellow-400 border-0 py-2 px-6 focus:outline-none hover:-translate-y-1 hover:scale-110 hover:bg-yellow-350 duration-300 rounded text-lg">
+                  Give us a call
+                </button>
+              </a>
             </div>
           </div>
           <div className="lg:w-1/2  md:w-3/4 sm:w-full">

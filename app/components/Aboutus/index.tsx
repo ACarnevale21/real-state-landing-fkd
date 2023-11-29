@@ -50,9 +50,11 @@ function AboutUs() {
         </div>
       </div>
       <div className="flex justify-center mx-auto py-10 ">
-        <button className="flex mx-auto transition ease-in-out delay-0 text-gray-900  bg-yellow-400 border-0 py-2 px-8 focus:outline-none hover:-translate-y-1 hover:scale-110 hover: duration-300 rounded text-lg">
-          Give us a call
-        </button>
+        <a href="tel:+19546677091">
+          <button className="flex mx-auto transition ease-in-out delay-0 text-gray-900  bg-yellow-400 border-0 py-2 px-8 focus:outline-none hover:-translate-y-1 hover:scale-110 hover: duration-300 rounded text-lg">
+            Give us a call
+          </button>
+        </a>
       </div>
     </section>
   );
